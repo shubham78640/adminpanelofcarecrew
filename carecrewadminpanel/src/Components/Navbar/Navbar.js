@@ -7,16 +7,23 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import imageAboutUs3 from "../../Images/CCHorizontal.png";
 
 import { NavLink, useParams } from "react-router-dom";
 function Navbar() {
   const navigate = useNavigate();
   return (
     <>
+    {/* <Box sx={{width:"100px"}}>
+        <img src={imageAboutUs3}  style={{width:"100px", height:"30px"}}
+        />
+        </Box> */}
       <AppBar
         position="static"
         sx={{ backgroundColor: "green", height: "55px" }}
       >
+        
+        
         <Toolbar variant="dense" sx={{ display: "flex", gap: "40px" }}>
           <NavLink
             variant="h6"
